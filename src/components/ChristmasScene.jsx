@@ -9,7 +9,7 @@ import React, { useRef } from "react";
 export function ChristmasScene(props) {
   const scroll = useScroll();
   const ref = useRef();
-  const { nodes, materials } = useGLTF("./models/christmas-tree.gltf");
+  const { nodes, materials } = useGLTF("/models/christmas-tree.gltf");
   useFrame(() => {
     ref.current.position.x = -scroll.offset * 12;
     ref.current.position.z = scroll.offset * 12;
@@ -64,4 +64,4 @@ export function ChristmasScene(props) {
   );
 }
 
-useGLTF.preload("./models/christmas-tree.gltf");
+useGLTF.preload("/models/christmas-tree.gltf");

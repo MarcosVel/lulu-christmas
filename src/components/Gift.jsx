@@ -12,7 +12,7 @@ import * as THREE from "three";
 export function Gift(props) {
   const scroll = useScroll();
   const ref = useRef();
-  const { nodes, materials } = useGLTF("/models/gift.gltf");
+  const { nodes, materials } = useGLTF("./models/gift.gltf");
   const rotationSpeed = useMemo(() => {
     return randFloat(0.4, 1.2);
   }, []);
@@ -81,4 +81,4 @@ export function Gift(props) {
   );
 }
 
-useGLTF.preload("/models/gift.gltf");
+useGLTF.preload("./models/gift.gltf");

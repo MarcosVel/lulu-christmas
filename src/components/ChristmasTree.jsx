@@ -23,7 +23,7 @@ const audioUrls = [
 export function ChristmasTree(props) {
   const scroll = useScroll();
   const ref = useRef();
-  const { nodes, materials } = useGLTF("/models/christmas-tree.gltf");
+  const { nodes, materials } = useGLTF("./models/christmas-tree.gltf");
   const [initialPosition] = useState(props.position);
   const [hoveredStar, setHoveredStar] = useState(false);
   const [currentMusicIndex, setCurrentMusicIndex] = useState(0);
@@ -113,4 +113,4 @@ export function ChristmasTree(props) {
   );
 }
 
-useGLTF.preload("/models/christmas-tree.gltf");
+useGLTF.preload("./models/christmas-tree.gltf");

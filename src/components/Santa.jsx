@@ -14,7 +14,7 @@ export function Santa(props) {
   const group = useRef();
   // const { nodes, materials, animations } = useGLTF();
   const { scene, materials, animations, nodes } = useSkinnedMeshClone(
-    "/models/santa.gltf"
+    "./models/santa.gltf"
   );
   const { actions, names } = useAnimations(animations, group);
   const [initialPosition] = useState(props.position);
@@ -118,4 +118,4 @@ export function Santa(props) {
   );
 }
 
-useGLTF.preload("/models/santa.gltf");
+useGLTF.preload("./models/santa.gltf");

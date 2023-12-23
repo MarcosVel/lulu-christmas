@@ -65,7 +65,7 @@ export const MerryChristmasText = (props) => {
         <Float>
           <Text3D
             ref={ref}
-            font={"/fonts/Mountains of Christmas_Bold.json"}
+            font={"fonts/Mountains of Christmas_Bold.json"}
             size={(dimensions.width * 1.75) / 1600}
             height={0.2}
             curveSegments={12}

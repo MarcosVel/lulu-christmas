@@ -14,16 +14,16 @@ const LIGHT_MAX = 5;
 const LIGHT_SPEED = 2.5;
 
 const audioUrls = [
-  "./audios/Jingle Bell Rock.mp3",
-  "./audios/All I Want For Christmas Is You.mp3",
-  "./audios/ES_Here Comes Lofi Claus - Guustavv.mp3",
-  "./audios/vance joy - riptide.mp3",
+  "audios/Jingle Bell Rock.mp3",
+  "audios/All I Want For Christmas Is You.mp3",
+  "audios/ES_Here Comes Lofi Claus - Guustavv.mp3",
+  "audios/vance joy - riptide.mp3",
 ];
 
 export function ChristmasTree(props) {
   const scroll = useScroll();
   const ref = useRef();
-  const { nodes, materials } = useGLTF("./models/christmas-tree.gltf");
+  const { nodes, materials } = useGLTF("models/christmas-tree.gltf");
   const [initialPosition] = useState(props.position);
   const [hoveredStar, setHoveredStar] = useState(false);
   const [currentMusicIndex, setCurrentMusicIndex] = useState(0);
@@ -113,4 +113,4 @@ export function ChristmasTree(props) {
   );
 }
 
-useGLTF.preload("./models/christmas-tree.gltf");
+useGLTF.preload("models/christmas-tree.gltf");
